@@ -1,0 +1,49 @@
+<header>
+  <img src="assets/perfil.svg" alt="">
+  <h1>Bienvenido {{ user.username }} a su gestor de tareas</h1>
+</header>
+<div class="manager">
+  <app-task-container  colorBack="to-do" [listTask]="this.todo" (clickButton)="clickButton($event)"></app-task-container>
+  <app-task-container  colorBack="doing" [listTask]="this.doing" (clickButton)="clickButton($event)"></app-task-container>
+  <app-task-container  colorBack="done" [listTask]="this.done" (clickButton)="clickButton($event)"></app-task-container>
+</div>
+
+<div class="add-tarea">
+  <button type="button" class="btn btn-primary todo" (click)="openModal()" >
+    NUEVA TAREA
+  </button>
+</div>
+
+
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form (ngSubmit) = "formSubmit()">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Titulo Tarea</label>
+            <input required [(ngModel)] = "taskForm.title" name = "title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nueva Tare">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Descripcion</label>
+            <input [(ngModel)] = "taskForm.description" name = "description"   type="text" class="form-control" id="exampleInputPassword1" placeholder="Una descripcion de la tarea">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Estado</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="state" [(ngModel)] = "taskForm.state">
+              <option value="Done">Done</option>
+              <option value="Todo">To Do</option>
+              <option value="doing">Doing</option>
+            </select>
+          </div>
+          <br>
+          <div class="button-submit">
+            <input type="button" value="Cancelar" class="cancelar" (click)="doSomething()">
+            <button mat-raised-button  color="primary" class="save" >Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

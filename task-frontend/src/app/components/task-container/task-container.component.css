@@ -1,0 +1,71 @@
+.container{
+  width: 462px;
+  height: 584px;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 45px;
+  margin-top: 133.5px;
+  flex-direction: row;
+
+}
+
+.task{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #FFEAEA;
+  width: 304px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 21px 54px;
+  gap: 10px;
+
+}
+
+.to-do{
+  background: #DD62FF;
+}
+
+.doing{
+  background: #62C6FF;
+}
+
+.done{
+  background: #62FFB4;
+}
+
+h1{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+}
+p{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: justify;
+}
+
+button{
+  background: #B184FB;
+border-radius: 16px;
+
+}
+
+.modificar{
+  width: 116px;
+height: 48px;
+border-color:#B184FB ;
+  background: #B184FB;
+  border-radius: 16px;
+  color: #FFFFFF;
+}

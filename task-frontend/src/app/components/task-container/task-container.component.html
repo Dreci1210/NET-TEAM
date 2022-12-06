@@ -1,0 +1,12 @@
+<div class="container {{colorBack}}" >
+  <div class="task" *ngFor="let item of listTask">
+    <h1>{{item.title}}</h1>
+    <p>{{item.description}}</p>
+    <div class="acciones">
+      <input type="button" class="modificar" (click)="modificar(item)" value="MODIFICAR">
+      <img src="assets/icon-delete.svg" alt="" (click)="deleteTask(item.id)">
+    </div>
+  </div>
+</div>
+
+

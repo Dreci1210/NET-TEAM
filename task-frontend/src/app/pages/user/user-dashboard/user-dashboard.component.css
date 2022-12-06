@@ -1,0 +1,89 @@
+header{
+  width: 100%;
+  height: 233px;
+  background: #B184FB;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1{
+font-family: 'Inter';
+font-style: normal;
+
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+color: #FFEAEA;
+}
+
+
+.manager{
+  display: flex;
+  justify-content: center;
+
+}
+
+.add-tarea{
+  text-align: right;
+  margin-top: 162px;
+  margin-right: 25rem;
+}
+
+.todo{
+  width: 199px;
+  height: 60px;
+    border-color: #DD62FF;
+    background: #DD62FF;
+    margin-bottom: 60px;
+    border-radius: 16px;
+    font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.cancelar{
+  width: 158px;
+height: 59px;
+color: #FFFFFF;
+background: #DD62FF;
+border-color: #DD62FF;
+border-radius: 16px;
+}
+
+.button-submit{
+  display: flex;
+  justify-content: space-between;
+}
+
+.save{
+  width: 162px;
+height: 59px;
+
+/* To do */
+
+background: #DD62FF;
+border-radius: 16px;
+}
+
+.modal-content{
+  width: 466px;
+height: 293px;
+}
+
+.modal-body{
+
+  background: #FFEAEA;
+}
+
+input{
+  background: transparent;
+}
+
+select{
+  background: transparent;
+}
